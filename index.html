@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subsuelo — Plataformero de precisión</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background: radial-gradient(circle at 50% 45%, #2a2420 0%, #0d0b0a 60%);
+      color: #c9b89a;
+      font-family: "Courier New", monospace;
+      text-align: center;
+      padding: 2rem;
+    }
+    .chispa {
+      width: 18px; height: 18px;
+      background: #ff7a1a;
+      box-shadow: 0 0 25px 8px rgba(255, 122, 26, 0.45);
+      animation: brinco 1.2s ease-in-out infinite;
+    }
+    @keyframes brinco {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-28px); }
+    }
+    h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); letter-spacing: 0.4em; color: #ff7a1a; margin-right: -0.4em; }
+    p { max-width: 34rem; line-height: 1.6; }
+    .estado { color: #6e6458; font-size: 0.9rem; }
+    a {
+      color: #0d0b0a; background: #c9b89a;
+      padding: 0.7rem 1.4rem; text-decoration: none; font-weight: bold;
+    }
+    a:hover { background: #ff7a1a; }
+  </style>
+</head>
+<body>
+  <div class="chispa"></div>
+  <h1>SUBSUELO</h1>
+  <p>Plataformero de precisión minimalista en JavaScript. Guía a Chispa, una brasa perdida en una mina abandonada bajo el desierto de Sonora, hasta la superficie.</p>
+  <p class="estado">🚧 En desarrollo: la versión jugable estará disponible aquí pronto.</p>
+  <a href="https://github.com/JoseOrtega8/subsuelo#readme">Ver la propuesta</a>
+</body>
+</html>
